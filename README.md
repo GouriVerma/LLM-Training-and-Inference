@@ -1,11 +1,20 @@
 
 
 ### Installation and Setup
+```bash
+python -m venv llm-env
+```
+
+```bash
+. llm-env/bin/activate
+```
+
 ```bash 
 pip install -r requirements.txt
 ``` 
 
-Wandb Login- for the plots of training models by Huggingface Trainer API. It would require obtaining API key for wandb which can be obtained by following link: https://wandb.ai/authorize 
+### Wandb Login
+For the plots of training models by Huggingface Trainer API. It would require obtaining API key for wandb which can be obtained by following link: https://wandb.ai/authorize 
 <br >
 <br >
 Run in terminal and paste the API key
@@ -24,7 +33,7 @@ python3 load_and_save_dataset.py
 2. For saving encodings of dataset for inference of model in cpp: `save_encodings.py`
 3. For saving model in torchscript format: `save_model_in_torchscript.py`
 4. Saved Torchscript Model: `traced_llama_4064_3.pt`
-5. Saved Pytorch Models: in folder `trained-llama`
+5. Saved Pytorch Models in folder `trained-llama`
 6. CPP Inference Code: in folder `cpp`
 
 README in cpp folder has instructions for running the inference code
