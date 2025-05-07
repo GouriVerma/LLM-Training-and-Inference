@@ -1,6 +1,14 @@
 
 
 ### Installation and Setup
+```bash
+python -m venv llm-env
+```
+
+```bash
+. llm-env/bin/activate
+```
+
 ```bash 
 pip install -r requirements.txt
 ``` 
